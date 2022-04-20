@@ -1,13 +1,17 @@
 package com.exchange_proxy;
-
+import java.net.MalformedURLException;
 import java.net.URI;
-
+import java.text.MessageFormat;
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
+import java.net.URL;
 
 import com.exchange_proxy.handler.Response;
 import com.exchange_proxy.models.AuthPayload;
+import com.exchange_proxy.models.QuotePayload;
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectReader;
@@ -17,7 +21,9 @@ import org.java_websocket.drafts.Draft;
 import org.java_websocket.handshake.ServerHandshake;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
+import de.timroes.axmlrpc.XMLRPCClient;
+import de.timroes.axmlrpc.XMLRPCException;
+import de.timroes.axmlrpc.XMLRPCServerException;
 
 public class Client extends WebSocketClient {
     private static final Logger Log = LoggerFactory.getLogger(Client.class);
@@ -38,12 +44,53 @@ public class Client extends WebSocketClient {
     public Client(URI serverUri, Map<String, String> httpHeaders) {
         super(serverUri, httpHeaders);
     }
+    private Object[] getTicker(String currency)
+            throws XMLRPCException, XMLRPCServerException, MalformedURLException, Exception {
+        XMLRPCClient client = new XMLRPCClient(new URL("https://apca.services.asklora.ai/rpc/v1/"));
+        Object[] ticker = (Object[]) client.call("get_listed_ticker", currency);
+        return ticker;
+    }
+    
 
     @Override
     public void onOpen(ServerHandshake handshakedata) {
         Log.debug("opened connection");
     }
 
+    public void subscribe(){
+        try {
+            Object[] ticker = getTicker("USD");
+            Object[] ticker2 = Arrays.copyOfRange(ticker, 0, 1);
+            QuotePayload payload = new QuotePayload(ticker2);
+            String stringpayload = payload.toJsonString();
+            Log.debug("subscribe: " + stringpayload);
+            send(stringpayload);
+        } catch (Exception e) {
+            Log.error("error", e);
+        }
+    }
+
+    public void publish(Response msg){
+        try{
+
+            Log.debug(msg.toJsonString());
+        }catch(JsonProcessingException e){
+            Log.error("error", e);
+        }
+    }
+
+    public void successHandler(Response res) throws JsonProcessingException {
+        String message = res.getMsg();
+        Log.debug(MessageFormat.format("messsage : {0}",message));
+        switch (message){
+            case "connected" -> sendAuth();
+            case "authenticated" -> subscribe();
+        }
+    }
+
+    public void errorHandler(Response res){
+        Log.error(MessageFormat.format("error : {0}",res.getMsg()));
+    }
     @Override
     public void onMessage(String message) {
         ObjectMapper mapper = new ObjectMapper().configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
@@ -51,11 +98,13 @@ public class Client extends WebSocketClient {
         try {
             List<Response> responses = reader.readValue(message);
             Response res = responses.get(0);
-            Log.debug(res.toJsonString());
-            if (res.getMsg().equals("connected")) {
-                String payload = authentication.toJsonString();
-                Log.debug("sending authentication payload: {}", payload);
-                send(payload);
+            String msg_type = res.getT();
+            Log.debug(MessageFormat.format("Type messages: {0}",msg_type));
+            switch (msg_type){
+                case "success" -> successHandler(res);
+                case "error" -> errorHandler(res);
+                case "q" -> publish(res);
+
             }
             
 
@@ -70,6 +119,11 @@ public class Client extends WebSocketClient {
         Log.warn(
                 "Connection closed by " + (remote ? "remote peer" : "us") + " Code: " + code + " Reason: "
                         + reason);
+    }
+    private void sendAuth() throws JsonProcessingException {
+        String payload = authentication.toJsonString();
+        Log.debug("sending authentication payload: {}", payload);
+        send(payload);
     }
 
     @Override

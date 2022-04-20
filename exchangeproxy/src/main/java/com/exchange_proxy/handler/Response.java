@@ -6,16 +6,85 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 
+
+
 public class Response {
     private String T;
     @JsonInclude(JsonInclude.Include.NON_NULL) 
     private String msg;
     @JsonInclude(JsonInclude.Include.NON_NULL) 
-    private String code;
+    private String code,S,bx,ax,t;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    private float bp,ap,bs,as,cls;
     private ObjectWriter writer = new ObjectMapper().writer().withDefaultPrettyPrinter();
 
     public String toJsonString() throws JsonProcessingException {
         return writer.writeValueAsString(this);
+    }
+    // @JsonGetter("p")
+    public float getCls() {
+        return (bp + ap) /2;
+    }
+
+    public String getBx() {
+        return bx;
+    }
+    public String setBx(String bx) {
+        return this.bx = bx;
+    }
+
+    public String getAx() {
+        return ax;
+    }
+    public String setAx(String ax) {
+        return this.ax = ax;
+    }
+    public float getBp() {
+        return bp;
+    }
+    public float setBp(float bp) {
+        return this.bp = bp;
+    }
+
+    public float getAp() {
+        return ap;
+    }
+
+    public float setAp(float ap) {
+        return this.ap = ap;
+    }
+
+    public float getBs() {
+        return bs;
+    }
+
+    public float setBs(float bs) {
+        return this.bs = bs;
+    }
+
+    public float getAs() {
+        return as;
+    }
+
+    public float setAs(float as) {
+        return this.as = as;
+    }
+
+    @JsonGetter("t")
+    public String getTime() {
+        return t;
+    }
+    @JsonSetter("t")
+    public void setTime(String time) {
+        this.t = time;
+    }
+    @JsonGetter("S")
+    public String getSymbol() {
+        return S;
+    }
+    @JsonSetter("S")
+    public void setSymbol(String time) {
+        this.S = time;
     }
     @JsonGetter("T")
     public String getT() {

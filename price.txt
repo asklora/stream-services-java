@@ -1,0 +1,936 @@
+41815 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+41815 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 188.0,
+  "ap" : 250.0,
+  "bs" : 1.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:51.284918576Z",
+  "S" : "BIIB"
+}
+41816 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+41817 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 188.0,
+  "ap" : 220.4,
+  "bs" : 1.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:51.406313171Z",
+  "S" : "BIIB"
+}
+41818 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+41819 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 188.0,
+  "ap" : 250.0,
+  "bs" : 1.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:51.595073296Z",
+  "S" : "BIIB"
+}
+42121 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+42122 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 188.0,
+  "ap" : 220.4,
+  "bs" : 1.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:51.909360043Z",
+  "S" : "BIIB"
+}
+42329 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+42330 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 188.0,
+  "ap" : 220.37,
+  "bs" : 1.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:52.100399524Z",
+  "S" : "BIIB"
+}
+42331 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+42332 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 188.0,
+  "ap" : 220.37,
+  "bs" : 1.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:52.100578496Z",
+  "S" : "BIIB"
+}
+42333 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+42334 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.27,
+  "ap" : 220.37,
+  "bs" : 2.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:52.102100181Z",
+  "S" : "BIIB"
+}
+42335 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+42335 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.27,
+  "ap" : 220.37,
+  "bs" : 2.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:52.200491702Z",
+  "S" : "BIIB"
+}
+42534 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+42535 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.27,
+  "ap" : 220.37,
+  "bs" : 2.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:52.284557024Z",
+  "S" : "BIIB"
+}
+42537 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+42538 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.27,
+  "ap" : 250.0,
+  "bs" : 2.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:52.284913185Z",
+  "S" : "BIIB"
+}
+43470 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+43471 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.27,
+  "ap" : 220.37,
+  "bs" : 2.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:53.428684897Z",
+  "S" : "BIIB"
+}
+44995 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+44996 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.27,
+  "ap" : 250.0,
+  "bs" : 2.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:54.711334943Z",
+  "S" : "BIIB"
+}
+44998 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+44998 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 188.0,
+  "ap" : 250.0,
+  "bs" : 1.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:54.711949558Z",
+  "S" : "BIIB"
+}
+45000 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+45001 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 188.0,
+  "ap" : 220.37,
+  "bs" : 1.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:54.712137209Z",
+  "S" : "BIIB"
+}
+45002 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+45003 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.28,
+  "ap" : 220.37,
+  "bs" : 2.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:54.71313167Z",
+  "S" : "BIIB"
+}
+45005 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+45006 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.28,
+  "ap" : 220.37,
+  "bs" : 2.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:54.7133786Z",
+  "S" : "BIIB"
+}
+45098 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+45099 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.28,
+  "ap" : 250.0,
+  "bs" : 2.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:54.865145536Z",
+  "S" : "BIIB"
+}
+45100 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+45101 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.28,
+  "ap" : 250.0,
+  "bs" : 2.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:54.865721411Z",
+  "S" : "BIIB"
+}
+45102 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+45103 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.28,
+  "ap" : 250.0,
+  "bs" : 2.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:54.902469668Z",
+  "S" : "BIIB"
+}
+45105 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+45106 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.28,
+  "ap" : 220.4,
+  "bs" : 2.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:54.969713286Z",
+  "S" : "BIIB"
+}
+45108 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+45108 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.28,
+  "ap" : 220.4,
+  "bs" : 2.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:54.995404048Z",
+  "S" : "BIIB"
+}
+45316 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+45317 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.28,
+  "ap" : 220.4,
+  "bs" : 2.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:55.099708167Z",
+  "S" : "BIIB"
+}
+45318 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+45319 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.28,
+  "ap" : 220.4,
+  "bs" : 2.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:55.103967005Z",
+  "S" : "BIIB"
+}
+45500 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+45501 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.28,
+  "ap" : 220.4,
+  "bs" : 3.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:55.191758358Z",
+  "S" : "BIIB"
+}
+45502 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+45503 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.28,
+  "ap" : 220.4,
+  "bs" : 2.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:55.191774753Z",
+  "S" : "BIIB"
+}
+45504 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+45505 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 188.0,
+  "ap" : 220.4,
+  "bs" : 1.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:55.19201787Z",
+  "S" : "BIIB"
+}
+45507 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+45507 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.29,
+  "ap" : 220.4,
+  "bs" : 2.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:55.192140748Z",
+  "S" : "BIIB"
+}
+46121 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+46122 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.29,
+  "ap" : 220.4,
+  "bs" : 2.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:55.872528931Z",
+  "S" : "BIIB"
+}
+47398 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+47399 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.29,
+  "ap" : 250.0,
+  "bs" : 2.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:57.322471726Z",
+  "S" : "BIIB"
+}
+47400 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+47400 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.29,
+  "ap" : 250.0,
+  "bs" : 2.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:57.323101936Z",
+  "S" : "BIIB"
+}
+47434 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+47436 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 188.0,
+  "ap" : 250.0,
+  "bs" : 1.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:57.37850288Z",
+  "S" : "BIIB"
+}
+47437 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+47438 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.31,
+  "ap" : 250.0,
+  "bs" : 2.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:57.379004484Z",
+  "S" : "BIIB"
+}
+47440 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+47440 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.31,
+  "ap" : 250.0,
+  "bs" : 2.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:57.379296975Z",
+  "S" : "BIIB"
+}
+47442 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+47443 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.31,
+  "ap" : 250.0,
+  "bs" : 3.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:57.379314673Z",
+  "S" : "BIIB"
+}
+47444 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+47444 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.31,
+  "ap" : 250.0,
+  "bs" : 3.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:57.379479061Z",
+  "S" : "BIIB"
+}
+47445 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+47446 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.31,
+  "ap" : 250.0,
+  "bs" : 3.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:57.379496739Z",
+  "S" : "BIIB"
+}
+47446 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+47447 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.32,
+  "ap" : 250.0,
+  "bs" : 1.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:57.380001509Z",
+  "S" : "BIIB"
+}
+47448 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+47448 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.32,
+  "ap" : 250.0,
+  "bs" : 1.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:57.389617684Z",
+  "S" : "BIIB"
+}
+47449 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+47450 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.32,
+  "ap" : 250.0,
+  "bs" : 1.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:57.389635443Z",
+  "S" : "BIIB"
+}
+47672 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+47673 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.33,
+  "ap" : 250.0,
+  "bs" : 1.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:57.390139662Z",
+  "S" : "BIIB"
+}
+47674 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+47675 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.33,
+  "ap" : 250.0,
+  "bs" : 1.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:57.391080094Z",
+  "S" : "BIIB"
+}
+47676 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+47676 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.34,
+  "ap" : 250.0,
+  "bs" : 1.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:57.391584896Z",
+  "S" : "BIIB"
+}
+47678 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+47678 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.34,
+  "ap" : 250.0,
+  "bs" : 1.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:57.39251684Z",
+  "S" : "BIIB"
+}
+47679 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+47680 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.34,
+  "ap" : 250.0,
+  "bs" : 1.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:57.392532267Z",
+  "S" : "BIIB"
+}
+47681 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+47682 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 188.0,
+  "ap" : 250.0,
+  "bs" : 1.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:57.392596736Z",
+  "S" : "BIIB"
+}
+47683 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+47684 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.35,
+  "ap" : 250.0,
+  "bs" : 1.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:57.393180026Z",
+  "S" : "BIIB"
+}
+47685 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+47685 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.35,
+  "ap" : 250.0,
+  "bs" : 1.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:57.394086742Z",
+  "S" : "BIIB"
+}
+47686 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+47686 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 188.0,
+  "ap" : 250.0,
+  "bs" : 1.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:57.394126312Z",
+  "S" : "BIIB"
+}
+47687 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+47687 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.36,
+  "ap" : 250.0,
+  "bs" : 1.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:57.394597995Z",
+  "S" : "BIIB"
+}
+47688 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+47689 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.36,
+  "ap" : 250.0,
+  "bs" : 1.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:57.395530627Z",
+  "S" : "BIIB"
+}
+47690 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+47690 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.36,
+  "ap" : 250.0,
+  "bs" : 1.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:57.395546429Z",
+  "S" : "BIIB"
+}
+47691 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+47692 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.37,
+  "ap" : 250.0,
+  "bs" : 1.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:57.396047866Z",
+  "S" : "BIIB"
+}
+47692 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+47693 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.37,
+  "ap" : 250.0,
+  "bs" : 1.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:57.396977221Z",
+  "S" : "BIIB"
+}
+47694 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+47695 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.37,
+  "ap" : 250.0,
+  "bs" : 1.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:57.396993657Z",
+  "S" : "BIIB"
+}
+47695 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+47696 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 188.0,
+  "ap" : 250.0,
+  "bs" : 1.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:57.39700857Z",
+  "S" : "BIIB"
+}
+47697 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+47697 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.38,
+  "ap" : 250.0,
+  "bs" : 1.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:57.397487067Z",
+  "S" : "BIIB"
+}
+47698 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+47699 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 188.0,
+  "ap" : 250.0,
+  "bs" : 1.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:57.401170634Z",
+  "S" : "BIIB"
+}
+47700 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+47700 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 188.0,
+  "ap" : 250.0,
+  "bs" : 1.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:57.40144726Z",
+  "S" : "BIIB"
+}
+47701 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+47702 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 188.0,
+  "ap" : 220.57,
+  "bs" : 1.0,
+  "as" : 2.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:57.42427092Z",
+  "S" : "BIIB"
+}
+47703 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+47704 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 188.0,
+  "ap" : 250.0,
+  "bs" : 1.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:57.582987881Z",
+  "S" : "BIIB"
+}
+47705 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+47705 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.35,
+  "ap" : 250.0,
+  "bs" : 2.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:57.629224598Z",
+  "S" : "BIIB"
+}
+47721 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+47722 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.35,
+  "ap" : 220.57,
+  "bs" : 2.0,
+  "as" : 2.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:57.67490042Z",
+  "S" : "BIIB"
+}
+47784 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+47784 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.35,
+  "ap" : 250.0,
+  "bs" : 2.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:57.720287279Z",
+  "S" : "BIIB"
+}
+47982 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+47983 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.35,
+  "ap" : 220.57,
+  "bs" : 2.0,
+  "as" : 2.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:57.929802494Z",
+  "S" : "BIIB"
+}
+48352 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+48354 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 188.0,
+  "ap" : 220.57,
+  "bs" : 1.0,
+  "as" : 2.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:58.209577727Z",
+  "S" : "BIIB"
+}
+48500 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+48501 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 188.0,
+  "ap" : 250.0,
+  "bs" : 1.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:58.45706909Z",
+  "S" : "BIIB"
+}
+48502 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+48503 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 188.0,
+  "ap" : 220.56,
+  "bs" : 1.0,
+  "as" : 2.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:58.457160989Z",
+  "S" : "BIIB"
+}
+49350 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+49351 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.37,
+  "ap" : 220.56,
+  "bs" : 2.0,
+  "as" : 2.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:59.059630017Z",
+  "S" : "BIIB"
+}
+49603 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+49604 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 188.0,
+  "ap" : 220.56,
+  "bs" : 1.0,
+  "as" : 2.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:59.26063209Z",
+  "S" : "BIIB"
+}
+49605 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+49605 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.37,
+  "ap" : 220.56,
+  "bs" : 2.0,
+  "as" : 2.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:59.309925084Z",
+  "S" : "BIIB"
+}
+49606 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+49607 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 188.0,
+  "ap" : 220.56,
+  "bs" : 1.0,
+  "as" : 2.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:59.411794425Z",
+  "S" : "BIIB"
+}
+49808 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+49809 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.43,
+  "ap" : 220.56,
+  "bs" : 2.0,
+  "as" : 2.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:59.563558119Z",
+  "S" : "BIIB"
+}
+49810 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+49811 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.43,
+  "ap" : 220.56,
+  "bs" : 2.0,
+  "as" : 2.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:59.564263424Z",
+  "S" : "BIIB"
+}
+49813 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+49814 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.43,
+  "ap" : 250.0,
+  "bs" : 2.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:59.704289025Z",
+  "S" : "BIIB"
+}
+49815 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+49816 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.43,
+  "ap" : 220.56,
+  "bs" : 2.0,
+  "as" : 2.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:59.72528818Z",
+  "S" : "BIIB"
+}
+50116 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+50116 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 188.0,
+  "ap" : 220.56,
+  "bs" : 1.0,
+  "as" : 2.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:59.923416073Z",
+  "S" : "BIIB"
+}
+50118 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+50119 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.43,
+  "ap" : 220.56,
+  "bs" : 2.0,
+  "as" : 2.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:59.924967219Z",
+  "S" : "BIIB"
+}
+50120 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - Type messages: q
+50121 [WebSocketConnectReadThread-17] DEBUG com.exchange_proxy.Client  - {
+  "bx" : "V",
+  "ax" : "V",
+  "bp" : 220.43,
+  "ap" : 250.0,
+  "bs" : 2.0,
+  "as" : 1.0,
+  "T" : "q",
+  "t" : "2022-04-20T19:59:59.947331516Z",
+  "S" : "BIIB"
+}
