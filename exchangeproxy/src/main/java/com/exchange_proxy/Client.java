@@ -10,7 +10,7 @@ import java.net.URL;
 
 import com.exchange_proxy.handler.Response;
 import com.exchange_proxy.models.AuthPayload;
-import com.exchange_proxy.models.QuotePayload;
+import com.exchange_proxy.models.TradesPayload;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -24,18 +24,30 @@ import org.slf4j.LoggerFactory;
 import de.timroes.axmlrpc.XMLRPCClient;
 import de.timroes.axmlrpc.XMLRPCException;
 import de.timroes.axmlrpc.XMLRPCServerException;
+import io.lettuce.core.RedisClient;
+import io.lettuce.core.pubsub.StatefulRedisPubSubConnection;
+import io.lettuce.core.pubsub.api.async.RedisPubSubAsyncCommands;
 
 public class Client extends WebSocketClient {
     private static final Logger Log = LoggerFactory.getLogger(Client.class);
+    private static final String channel_prefix = "asgi__group__";
+    public String redis_uri;
+    public  RedisClient redisClient;
+    public  StatefulRedisPubSubConnection<String, String> connection;
+    public RedisPubSubAsyncCommands<String, String> publisher;
 
     AuthPayload authentication;
 
     public Client(URI serverUri, Draft draft) {
         super(serverUri, draft);
     }
-    public Client(URI serverURI,AuthPayload authentication){
+    public Client(URI serverURI,AuthPayload authentication, String redis_uri){
         super(serverURI);
         this.authentication = authentication;
+        this.redis_uri = redis_uri;
+        this.redisClient = RedisClient.create(redis_uri);
+        this.connection = redisClient.connectPubSub();
+
     }
     public Client(URI serverURI) {
         super(serverURI);
@@ -55,13 +67,14 @@ public class Client extends WebSocketClient {
     @Override
     public void onOpen(ServerHandshake handshakedata) {
         Log.debug("opened connection");
+        this.publisher = this.connection.async();
     }
 
     public void subscribe(){
         try {
             Object[] ticker = getTicker("USD");
-            Object[] ticker2 = Arrays.copyOfRange(ticker, 0, 1);
-            QuotePayload payload = new QuotePayload(ticker2);
+            Object[] ticker2 = Arrays.copyOfRange(ticker, 0, 10);
+            TradesPayload payload = new TradesPayload(ticker2);
             String stringpayload = payload.toJsonString();
             Log.debug("subscribe: " + stringpayload);
             send(stringpayload);
@@ -72,7 +85,9 @@ public class Client extends WebSocketClient {
 
     public void publish(Response msg){
         try{
-
+            String channel = MessageFormat.format("{0}{1}", channel_prefix, msg.getSymbol());
+            String data =  msg.toJsonString();
+            this.publisher.publish(channel, data);
             Log.debug(msg.toJsonString());
         }catch(JsonProcessingException e){
             Log.error("error", e);
@@ -81,7 +96,7 @@ public class Client extends WebSocketClient {
 
     public void successHandler(Response res) throws JsonProcessingException {
         String message = res.getMsg();
-        Log.debug(MessageFormat.format("messsage : {0}",message));
+        Log.info(MessageFormat.format("messsage : {0}",message));
         switch (message){
             case "connected" -> sendAuth();
             case "authenticated" -> subscribe();
@@ -103,7 +118,8 @@ public class Client extends WebSocketClient {
             switch (msg_type){
                 case "success" -> successHandler(res);
                 case "error" -> errorHandler(res);
-                case "q" -> publish(res);
+                case "t" -> publish(res);
+                case "subscription" -> Log.info("subscribed");
 
             }
             
@@ -122,7 +138,7 @@ public class Client extends WebSocketClient {
     }
     private void sendAuth() throws JsonProcessingException {
         String payload = authentication.toJsonString();
-        Log.debug("sending authentication payload: {}", payload);
+        Log.info("sending authentication payload");
         send(payload);
     }
 

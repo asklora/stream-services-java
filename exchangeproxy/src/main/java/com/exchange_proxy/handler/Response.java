@@ -1,4 +1,6 @@
 package com.exchange_proxy.handler;
+import java.math.BigInteger;
+
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonSetter;
@@ -13,17 +15,56 @@ public class Response {
     @JsonInclude(JsonInclude.Include.NON_NULL) 
     private String msg;
     @JsonInclude(JsonInclude.Include.NON_NULL) 
-    private String code,S,bx,ax,t;
+    private String code,S,bx,ax,t,x;
+    @JsonInclude(JsonInclude.Include.NON_DEFAULT)
+    private float bp,ap,bs,as,p;
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    private float bp,ap,bs,as,cls;
+    private BigInteger i,s;
     private ObjectWriter writer = new ObjectMapper().writer().withDefaultPrettyPrinter();
 
     public String toJsonString() throws JsonProcessingException {
         return writer.writeValueAsString(this);
     }
-    // @JsonGetter("p")
-    public float getCls() {
-        return (bp + ap) /2;
+    @JsonGetter("p")
+    public float getPrice() {
+        return p;
+    }
+    @JsonSetter("p")
+    public float setPrice(float price) {
+        this.p = price;
+        return price;
+    }
+    @JsonGetter("i")
+    public BigInteger getId() {
+        return i;
+    }
+
+    @JsonSetter("i")
+    public BigInteger setId(BigInteger id) {
+        this.i = id;
+        return id;
+    }
+
+    @JsonGetter("s")
+    public BigInteger getSize() {
+        return s;
+    }
+
+    @JsonSetter("s")
+    public BigInteger setSize(BigInteger size) {
+        this.s = size;
+        return size;
+    }
+
+    @JsonGetter("x")
+    public String getExchangeCode() {
+        return x;
+    }
+
+    @JsonSetter("x")
+    public String setExchangeCode(String exchangeCode) {
+        this.x = exchangeCode;
+        return exchangeCode;
     }
 
     public String getBx() {
@@ -112,7 +153,8 @@ public class Response {
         SUCCESS("success"), 
         ERROR("error"), 
         SUBSCRIBTION("subscription"),
-        QUOTE("q");
+        QUOTE("q"),
+        TRADES("t");
  
     private String values;
  

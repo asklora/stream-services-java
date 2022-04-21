@@ -31,13 +31,13 @@ public class Provider {
     public Client getIexClient() throws URISyntaxException {
         URI url = new URI(__getUrl() + source[0]);
         System.out.println(url);
-        Client client = new Client(url, authentication);
+        Client client = new Client(url, authentication, this.credentials.getRedisUri());
         return client;
     }
 
     public Client getSipClient() throws URISyntaxException {
         URI url = new URI(__getUrl() + source[1]);
-        Client client = new Client(url, authentication);
+        Client client = new Client(url, authentication,this.credentials.getRedisUri());
         return client;
     }
 
