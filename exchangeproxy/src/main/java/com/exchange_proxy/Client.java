@@ -44,6 +44,7 @@ public class Client extends WebSocketClient {
     }
     public Client(URI serverURI,AuthPayload authentication, String redis_uri){
         super(serverURI);
+        Log.info(serverURI.toString());
         this.authentication = authentication;
         this.redis_uri = redis_uri;
         this.redisClient = RedisClient.create(redis_uri);
@@ -61,6 +62,7 @@ public class Client extends WebSocketClient {
             throws XMLRPCException, XMLRPCServerException, MalformedURLException, Exception {
         Dotenv dotenv = Dotenv.load();
         String rpcUrl = dotenv.get("RPC_URL");
+        // Log.info(rpcUrl);
         XMLRPCClient client = new XMLRPCClient(new URL(rpcUrl));
         Object[] ticker = (Object[]) client.call("get_listed_ticker", currency);
         return ticker;
@@ -69,7 +71,7 @@ public class Client extends WebSocketClient {
 
     @Override
     public void onOpen(ServerHandshake handshakedata) {
-        Log.debug("opened connection");
+        Log.info("opened connection");
         this.publisher = this.connection.async();
     }
 
@@ -90,7 +92,7 @@ public class Client extends WebSocketClient {
             String channel = MessageFormat.format("{0}{1}", channel_prefix, msg.getSymbol());
             String data =  msg.toJsonString();
             this.publisher.publish(channel, data);
-            Log.debug(msg.toJsonString());
+            // Log.info(msg.toJsonString());
         }catch(JsonProcessingException e){
             Log.error("error", e);
         }
@@ -141,6 +143,7 @@ public class Client extends WebSocketClient {
     private void sendAuth() throws JsonProcessingException {
         String payload = authentication.toJsonString();
         Log.info("sending authentication payload");
+        // Log.info(payload);
         send(payload);
     }
 
