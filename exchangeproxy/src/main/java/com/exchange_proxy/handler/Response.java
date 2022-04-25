@@ -15,7 +15,7 @@ public class Response {
     @JsonInclude(JsonInclude.Include.NON_NULL) 
     private String msg;
     @JsonInclude(JsonInclude.Include.NON_NULL) 
-    private String code,S,bx,ax,t,x;
+    private String code,S,bx,ax,t,x,type;
     @JsonInclude(JsonInclude.Include.NON_DEFAULT)
     private float bp,ap,bs,as,p;
     @JsonInclude(JsonInclude.Include.NON_NULL)
@@ -24,6 +24,15 @@ public class Response {
 
     public String toJsonString() throws JsonProcessingException {
         return writer.writeValueAsString(this);
+    }
+
+    @JsonGetter("type")
+    public String getType() {
+        return type;
+    }
+    @JsonSetter("type")
+    public void setType(String type) {
+        this.type = type;
     }
     @JsonGetter("p")
     public float getPrice() {

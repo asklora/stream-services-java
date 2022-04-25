@@ -90,9 +90,10 @@ public class Client extends WebSocketClient {
     public void publish(Response msg){
         try{
             String channel = MessageFormat.format("{0}{1}", channel_prefix, msg.getSymbol());
+            msg.setType("market_event");
             String data =  msg.toJsonString();
             this.publisher.publish(channel, data);
-            // Log.info(msg.toJsonString());
+            // Log.info(msg.getType());
         }catch(JsonProcessingException e){
             Log.error("error", e);
         }
