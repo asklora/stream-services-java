@@ -14,10 +14,10 @@ public final class App {
 
     public static void main(String[] args) throws Exception {
         BasicConfigurator.configure(); // log4j
-        Logger.getRootLogger().setLevel(Level.DEBUG);
+        Logger.getRootLogger().setLevel(Level.INFO);
 
         Provider provider = new Provider(false);
-        Client client = provider.getIexClient();
+        Client client = provider.getSipClient();
         client.connect();
 
     }

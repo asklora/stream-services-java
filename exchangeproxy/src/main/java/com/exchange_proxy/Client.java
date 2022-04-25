@@ -24,6 +24,7 @@ import org.slf4j.LoggerFactory;
 import de.timroes.axmlrpc.XMLRPCClient;
 import de.timroes.axmlrpc.XMLRPCException;
 import de.timroes.axmlrpc.XMLRPCServerException;
+import io.github.cdimascio.dotenv.Dotenv;
 import io.lettuce.core.RedisClient;
 import io.lettuce.core.pubsub.StatefulRedisPubSubConnection;
 import io.lettuce.core.pubsub.api.async.RedisPubSubAsyncCommands;
@@ -58,7 +59,9 @@ public class Client extends WebSocketClient {
     }
     private Object[] getTicker(String currency)
             throws XMLRPCException, XMLRPCServerException, MalformedURLException, Exception {
-        XMLRPCClient client = new XMLRPCClient(new URL("https://apca.services.asklora.ai/rpc/v1/"));
+        Dotenv dotenv = Dotenv.load();
+        String rpcUrl = dotenv.get("RPC_URL");
+        XMLRPCClient client = new XMLRPCClient(new URL(rpcUrl));
         Object[] ticker = (Object[]) client.call("get_listed_ticker", currency);
         return ticker;
     }
@@ -73,8 +76,7 @@ public class Client extends WebSocketClient {
     public void subscribe(){
         try {
             Object[] ticker = getTicker("USD");
-            Object[] ticker2 = Arrays.copyOfRange(ticker, 0, 10);
-            TradesPayload payload = new TradesPayload(ticker2);
+            TradesPayload payload = new TradesPayload(ticker);
             String stringpayload = payload.toJsonString();
             Log.debug("subscribe: " + stringpayload);
             send(stringpayload);
