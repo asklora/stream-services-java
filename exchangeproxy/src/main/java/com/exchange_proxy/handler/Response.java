@@ -1,4 +1,5 @@
 package com.exchange_proxy.handler;
+
 import java.math.BigInteger;
 
 import com.fasterxml.jackson.annotation.JsonGetter;
@@ -8,41 +9,95 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 
-
-
 public class Response {
     private String T;
-    @JsonInclude(JsonInclude.Include.NON_NULL) 
-    private String msg;
-    @JsonInclude(JsonInclude.Include.NON_NULL) 
-    private String code,S,bx,ax,t,x,type;
-    @JsonInclude(JsonInclude.Include.NON_DEFAULT)
-    private float bp,ap,bs,as,p;
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    private BigInteger i,s;
+    private String msg;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    private String code, S, bx, ax, t, x, type;
+    @JsonInclude(JsonInclude.Include.NON_DEFAULT)
+    private float bp, ap, bs, as, p;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    private float o, h, l, v;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    private BigInteger i, s;
     private ObjectWriter writer = new ObjectMapper().writer().withDefaultPrettyPrinter();
 
     public String toJsonString() throws JsonProcessingException {
         return writer.writeValueAsString(this);
     }
 
+    @JsonGetter("o")
+    public float getOpen() {
+        return o;
+    }
+
+    @JsonSetter("o")
+    public void setOpen(float open) {
+        this.o = open;
+    }
+
+    // @JsonGetter("c")
+    // public float getClose() {
+    //     return c;
+    // }
+
+    // @JsonSetter("c")
+    // public void setClose(float close) {
+    //     this.c = close;
+    // }
+
+    @JsonGetter("h")
+    public float getHigh() {
+        return h;
+    }
+
+    @JsonSetter("h")
+    public void setHigh(float high) {
+        this.h = high;
+    }
+
+    @JsonGetter("l")
+    public float getLow() {
+        return l;
+    }
+
+    @JsonSetter("l")
+    public void setLow(float low) {
+        this.l = low;
+    }
+
+    @JsonGetter("v")
+    public float getVolume() {
+        return v;
+    }
+
+    @JsonSetter("v")
+    public void setType(float volume) {
+        this.v = volume;
+    }
+
     @JsonGetter("type")
     public String getType() {
         return type;
     }
+
     @JsonSetter("type")
     public void setType(String type) {
         this.type = type;
     }
+
     @JsonGetter("p")
     public float getPrice() {
         return p;
     }
+
     @JsonSetter("p")
     public float setPrice(float price) {
         this.p = price;
         return price;
     }
+
     @JsonGetter("i")
     public BigInteger getId() {
         return i;
@@ -79,6 +134,7 @@ public class Response {
     public String getBx() {
         return bx;
     }
+
     public String setBx(String bx) {
         return this.bx = bx;
     }
@@ -86,12 +142,15 @@ public class Response {
     public String getAx() {
         return ax;
     }
+
     public String setAx(String ax) {
         return this.ax = ax;
     }
+
     public float getBp() {
         return bp;
     }
+
     public float setBp(float bp) {
         return this.bp = bp;
     }
@@ -124,65 +183,73 @@ public class Response {
     public String getTime() {
         return t;
     }
+
     @JsonSetter("t")
     public void setTime(String time) {
         this.t = time;
     }
+
     @JsonGetter("S")
     public String getSymbol() {
         return S;
     }
+
     @JsonSetter("S")
     public void setSymbol(String time) {
         this.S = time;
     }
+
     @JsonGetter("T")
     public String getT() {
         return this.T;
     }
+
     @JsonSetter("T")
     public void setT(String T) {
         this.T = T;
     }
+
     public String getMsg() {
         return msg;
     }
+
     public void setMsg(String msg) {
         this.msg = msg;
     }
+
     public String getCode() {
         return code;
     }
+
     public void setCode(String code) {
         this.code = code;
     }
 
-
-    public static enum Type{
-        SUCCESS("success"), 
-        ERROR("error"), 
+    public static enum Type {
+        SUCCESS("success"),
+        ERROR("error"),
         SUBSCRIBTION("subscription"),
         QUOTE("q"),
         TRADES("t");
- 
-    private String values;
- 
-    Type(String values) {
-        this.values = values;
-    }
- 
-    public String getValues() {
-        return values;
-    }
+
+        private String values;
+
+        Type(String values) {
+            this.values = values;
+        }
+
+        public String getValues() {
+            return values;
+        }
 
     }
 
-    public static enum  ConMessages{
+    public static enum ConMessages {
         connected,
         authenticated,
     }
 
-    public static enum StatusCode{
+    public static enum StatusCode {
         INVALID(400),
         UNAUTHORIZED(401),
         AUTHFAILED(402),
@@ -194,14 +261,15 @@ public class Response {
         FAILVERSION(408),
         INSUFFICIENTCON(409),
         INTERNALERROR(500);
+
         private int values;
- 
+
         StatusCode(int values) {
-        this.values = values;
-    }
- 
-    public int getValues() {
-        return values;
-    }
+            this.values = values;
+        }
+
+        public int getValues() {
+            return values;
+        }
     }
 }

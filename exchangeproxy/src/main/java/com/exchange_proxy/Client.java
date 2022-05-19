@@ -62,9 +62,14 @@ public class Client extends WebSocketClient {
             throws XMLRPCException, XMLRPCServerException, MalformedURLException, Exception {
         Dotenv dotenv = Dotenv.load();
         String rpcUrl = dotenv.get("RPC_URL");
+        String debug = dotenv.get("DEBUG");
         // Log.info(rpcUrl);
         XMLRPCClient client = new XMLRPCClient(new URL(rpcUrl));
         Object[] ticker = (Object[]) client.call("get_listed_ticker", currency);
+        if (debug.equals("true")) {
+            Object[] ticker2 = Arrays.copyOfRange(ticker, 0, 10);
+            return ticker2;
+        }
         return ticker;
     }
     
@@ -80,6 +85,7 @@ public class Client extends WebSocketClient {
             Object[] ticker = getTicker("USD");
             TradesPayload payload = new TradesPayload(ticker);
             String stringpayload = payload.toJsonString();
+            // Log.info(stringpayload);
             Log.debug("subscribe: " + stringpayload);
             send(stringpayload);
         } catch (Exception e) {
@@ -124,6 +130,8 @@ public class Client extends WebSocketClient {
                 case "success" -> successHandler(res);
                 case "error" -> errorHandler(res);
                 case "t" -> publish(res);
+                case "d" -> Log.info(res.toJsonString());
+                // case "b" -> Log.info(res.toJsonString());
                 case "subscription" -> Log.info("subscribed");
 
             }
